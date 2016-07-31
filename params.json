@@ -1,0 +1,6 @@
+{
+  "name": "Bjcochrane.GitHub.io",
+  "tagline": "",
+  "body": "# Projects under way\r\n\r\n##  TeachingPopGen\r\n\r\nThis is the rudimentary R package that I use for teaching my course in Evolutionary and Population Genetics.  It is available for installation via devtools and install_github at bjcochrane/TeachingPopGen\r\n\r\n## Population Genetics with R\r\n\r\nThis is a text that I've developed over the past several years.  It was written in RStudio and is constantly being upgraded.\r\n\r\n## Genetics 9e\r\n\r\nThis is a more proprietary project - a textbook revision - so not much, other than some occasional exploratory material, will show up here.\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
