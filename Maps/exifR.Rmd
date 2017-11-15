@@ -1,0 +1,125 @@
+---
+title: "Using exifR"
+author: "Bruce Cochrane"
+date: "11/25/2016"
+output: html_document
+---
+This is from a [blog](http://www.seascapemodels.org/rstats/2016/11/14/extract-exif.html) showing how to extract exif stuff directly in R.
+
+The basic rules are
+
+1.  From Photo, select photos, give titles and/or descriptions, and save as jpgs with high quality/large size in subfolder of this one.  Do so carefully, to make sure each has title/description and coordinates.
+2.  Edit code below to include folder name.
+3.  Save Html file
+4.  Add link on google doc in Travel (or wherever we want to)
+
+
+```{r eval=FALSE}
+install.packages("exifr")
+install.packages("leaflet")
+```
+
+```{r}
+library(dplyr)
+library(exifr)
+library(leaflet)
+library(jpeg)
+library(htmlwidgets)
+scl <-function(dms){
+  round(300*(dms/max(dms)),0)
+}
+```
+
+Just need to edit the following with the directory name and then load the function.
+
+
+```{r}
+setwd("./Maps")
+root <- "./Photos/Tacky Mess/"
+files <-list.files(root,pattern=".jpg")
+files=paste0(root,files)
+dat <-exifr(files)
+files
+```
+
+OK.  That gets us everything we need.  Now extract the ones we want with a dplyr select:
+
+Note that the following needs to be uncommented, based on which field should be used.
+
+```{r}
+dat2 <-select(dat,SourceFile,DateTimeOriginal,GPSLongitude,GPSLatitude,GPSTimeStamp)
+#descr <-dat$Description
+descr <-dat$Title
+dat2 <-data.frame(dat2,Description=descr,stringsAsFactors = FALSE)
+dat2
+```
+
+Remove the ./ from the filenames
+
+```{r}
+flnm <-gsub(root,"",dat2$SourceFile)
+head(flnm)
+```
+
+### Scaling the popups
+
+```{r}
+x <-dat$ExifImageWidth
+y <-dat$ExifImageHeight
+dims <-rbind(x,y)
+dims.sc <-apply(dims,2,scl)
+```
+
+### Write the url (note - need to fix this to avoid the pasting)
+
+```{r}
+root1 <-substr(root,3,nchar(root))
+url <-paste0("<img src = 'https://bjcochrane.github.io/Maps/",root1)
+url
+```
+
+Construct the html
+
+```{r}
+htm <-paste0(url,flnm,"' style='width:",dims.sc[1,],"px; height:",dims.sc[2,],"px'","</br></br>",dat2$Description)
+htm[1]
+```
+
+
+Make the plot
+
+```{r}
+map <- leaflet(dat2) %>%
+  addProviderTiles("Esri.WorldImagery") %>%
+  addMarkers(~ GPSLongitude, ~ GPSLatitude, popup = ~htm) 
+map
+```
+
+### Export
+
+This sends it to the home directory:
+
+```{r}
+#root2 <-substr(root1,1,nchar(root1)-1)
+root2 <-unlist(strsplit(root1,"/"))[2]
+saveWidget(map,fi=paste0(root2,".html"),selfcontained = T,libdir="leafletFiles")
+```
+
+
+
+So it writes the html into the working directory but then puts all the miscellany needed into the leafletFiles directory, which could be reused for others.  
+
+### Summarizing
+
+So as long as we put the figures into a folder that is a subdirectory of this, then all we need to do is to change the foldername at the outset and the html file name at the end?  And remember that we need to wait for Dropbox to synch.  And orientation is a problem - vertical pictures come out awful.  And one more note - saving was out of Photo as high quality large jpeg.
+
+### To do
+
+Probably need to add the dimensisons to dat2 for each set and then write.csv into a common folder.  In the future, we could then make a giant map with everything on it (or, for example a multi-year map of Geneva files).  Also, in prep for the demise of html serving on Dropbox, if we want to have portable files, then we need to have the self contained=TRUE in the saveWidget command.  We may want to port this project to Miami - would be nice if we could get a short alias for it.
+
+### Bluehost upload
+
+To connect to server, from finder go to https://box245.bluehost.com:2078
+
+
+
