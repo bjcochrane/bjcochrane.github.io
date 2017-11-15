@@ -8,10 +8,7 @@ output:
 ---
 This is a central repository for various web projects.  Links to them are below.
 
-<<<<<<< HEAD
+
 #### [Population Genetics with R](http://www.teachingpopgen.org)
 
 #### [Evolution, History and Society](http://www.evolhist.org)
-=======
-[Population Genetics with R](http://www.teachingpopgen.org)
->>>>>>> d569ba2e7e46795819a818e16896ca30ce9a4390
