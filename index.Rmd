@@ -11,4 +11,8 @@ This is a central repository for various web projects.  Links to them are below.
 
 #### [Population Genetics with R](http://www.teachingpopgen.org)
 
+This will ultimately connect you to my major work project of the last few years - an online introduction to population genetics, using R as a platform for exploration.  Right now it has a lot of busted links; they will be updated as I figure out how to por them from Dropbox.
+
 #### [Evolution, History and Society](http://www.evolhist.org)
+
+This is my personal blog.  Lots of miscellaneous stuff, but (to the greatest extent possible) no politics.
