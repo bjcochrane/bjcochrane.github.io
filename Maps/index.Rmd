@@ -12,8 +12,8 @@ library(knitr)
 
 ```{r,echo=FALSE}
 options(warn= -1)
-url <- "http://bjcochrane.github.io/Maps/"
-Trips <-list.files(pattern=".html")
+url <- "http://bjcochrane.github.io/Maps/Rendered/"
+Trips <-list.files(path="./Rendered", pattern=".html")
 Trips <-Trips[which(Trips!="index.html")]
 ```
 
