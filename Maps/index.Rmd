@@ -1,0 +1,26 @@
+---
+title: "Photos from around North America"
+author: "Bruce Cochrane"
+date: "12/4/2016"
+output: html_document
+---
+```{r,echo=FALSE}
+options(warn= -1)
+library(knitr) 
+```
+
+
+```{r,echo=FALSE}
+options(warn= -1)
+url <- "http://bjcochrane.github.io/Maps/"
+Trips <-list.files(pattern=".html")
+Trips <-Trips[which(Trips!="index.html")]
+```
+
+```{r,echo=FALSE}
+Trips.url <-paste0(url,Trips,"\n")
+#Trips.url
+out <-data.frame(Trip=(paste0("[",Trips,"](",Trips.url,")")))
+kable(out)
+```
+
