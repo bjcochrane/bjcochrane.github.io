@@ -18,9 +18,11 @@ Trips <-Trips[which(Trips!="index.html")]
 ```
 
 ```{r,echo=FALSE}
-Trips.url <-paste0(url,Trips,"\n")
+Trips <-matrix(Trips,nrow=length(Trips))
+Trips.url <-paste0(url,Trips)
 #Trips.url
-out <-data.frame(Trip=(paste0("[",Trips,"](",Trips.url,")")))
+out <-data.frame(Trip=(paste0("[",Trips,"](",Trips.url,")","<br>")))
+#out <-t(out)
 kable(out)
 ```
 
