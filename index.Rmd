@@ -17,6 +17,6 @@ This will ultimately connect you to my major work project of the last few years 
 
 This is my personal blog.  Lots of miscellaneous stuff, but (to the greatest extent possible) no politics.
 
-#### [Photos And Travel](http://bjcochrane.github.io/Maps)
+#### [Photos And Travel](http://bjcochrane.github.io/Maps/MapTab.html)
 
 Places we've been, mapped onto ESRI Images
