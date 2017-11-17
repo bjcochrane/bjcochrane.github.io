@@ -1,0 +1,138 @@
+---
+output: 
+  html_document: 
+    theme: paper
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Maps of Places We've been {.tabset}
+
+## Everywhere {.tabset}
+
+### Random Photos
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/Master.html" height="750" width="100%"></iframe>
+
+### Tacky Mess
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/TackyMess.html" height="750" width="100%"></iframe>
+
+## Florida {.tabset}
+
+### Fort DeSoto 2013
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/DeSoto2013.html" height="750" width="100%"></iframe>
+
+### August 2016
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/Tampa.html" height="750" width="100%"></iframe>
+
+## New Mexico
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/NM2014.html" height="750" width="100%"></iframe>
+
+## Arizona {.tabset}
+
+### 2013 {.tabset}
+
+#### Kitt Peak 
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/Kitt2013.html" height="750" width="100%"></iframe>
+
+### 2015 {.tabset}
+
+#### Brown Canyon 
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/BrownCanyon2015.html" height="750" width="100%"></iframe>
+
+
+### 2016 
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/Arizona2016.html" height="750" width="100%"></iframe>
+
+### 2017  
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/Arizona2017.html" height="750" width="100%"></iframe>
+
+## Winnipeg {.tabset}
+
+### 2013
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/Winnipeg2013.html" height="750" width="100%"></iframe>
+
+### 2015
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/Winnipeg2015.html" height="750" width="100%"></iframe>
+
+## Ohio {.tabset}
+
+### Whitewater Bike Path {.tabset}
+
+#### 2015
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/Whitewater2015.html" height="750" width="100%"></iframe>
+
+#### 2017
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/Whitewater2017.html" height="750" width="100%"></iframe>
+
+### The Hocking Hills {.tabset}
+
+#### Old Photos
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/HockingHills.html" height="750" width="100%"></iframe>
+
+#### 2016
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/Hocking2016.html" height="750" width="100%"></iframe>
+### Yellow Springs
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/YellowSprings2015.html" height="750" width="100%"></iframe>
+
+### Spring Grove Cemetery
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/SpringGrove2015.html" height="750" width="100%"></iframe>
+
+### Other {.tabset} 
+
+#### Punderson Manor and Burton Wetlands {.tabset}
+
+##### 2016
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/Punderson2016.html" height="750" width="100%"></iframe>
+
+##### 2017
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/Punderson2017.html" height="750" width="100%"></iframe>
+
+#### Bears Mill
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/BearsMill.html" height="750" width="100%"></iframe>
+
+## Utah
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/Utah2013.html" height="750" width="100%"></iframe>
+
+## Geneva {.tabset}
+
+### 2017
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/Geneva2017.html" height="750" width="100%"></iframe>
+
+### 2016
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/Geneva2016.html" height="750" width="100%"></iframe>
+
+### 2014
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/Geneva2014.html" height="750" width="100%"></iframe>
+
+## Other Northeast {.tabset}
+
+### Connecticut
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/Connecticut.html" height="750" width="100%"></iframe>
+
+### Allegheny National Forest
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/Allegheny.html" height="750" width="100%"></iframe>
