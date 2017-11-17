@@ -1,7 +1,7 @@
 ---
 title: "Photos from around North America"
 author: "Bruce Cochrane"
-date: "12/4/2016"
+date: <h4>`r format(Sys.Date(),format="%B %d %Y")`</h4>
 output: html_document
 ---
 ```{r,echo=FALSE}
@@ -21,7 +21,7 @@ Trips <-Trips[which(Trips!="index.html")]
 Trips <-matrix(Trips,nrow=length(Trips))
 Trips.url <-paste0(url,Trips)
 #Trips.url
-out <-data.frame(Trip=(paste0("[",Trips,"](",Trips.url,")","<br>")))
+out <-data.frame(Trip=(paste0("[",Trips,"](",Trips.url,")")))
 #out <-t(out)
 kable(out)
 ```
