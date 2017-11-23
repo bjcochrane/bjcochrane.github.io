@@ -35,10 +35,10 @@ Just need to edit the following with the directory name and then load the functi
 
 ```{r}
 #setwd("./Maps")
-root <- "./Photos/YellowSprings2015/"
+root <- "./Photos/Tacky Mess/"
 files <-list.files(root,pattern=".jpg")
 files=paste0(root,files)
-dat <-exifr(files)
+dat <-read_exif(files)
 files
 ```
 
