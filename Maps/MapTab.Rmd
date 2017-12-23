@@ -86,6 +86,11 @@ knitr::opts_chunk$set(echo = TRUE)
 #### 2016
 
 <iframe src="http://bjcochrane.github.io/Maps/Rendered/Hocking2016.html" height="750" width="100%"></iframe>
+
+#### 2017
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/Hocking2017.html" height="750" width="100%"></iframe>
+
 ### Yellow Springs
 
 <iframe src="http://bjcochrane.github.io/Maps/Rendered/YellowSprings2015.html" height="750" width="100%"></iframe>
@@ -95,6 +100,10 @@ knitr::opts_chunk$set(echo = TRUE)
 <iframe src="http://bjcochrane.github.io/Maps/Rendered/SpringGrove2015.html" height="750" width="100%"></iframe>
 
 ### Other {.tabset} 
+
+#### Hopewell Mound City {.tabset}
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/Hopewell2017.html" height="750" width="100%"></iframe>
 
 #### Punderson Manor and Burton Wetlands {.tabset}
 
