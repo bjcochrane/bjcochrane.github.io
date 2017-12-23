@@ -99,11 +99,17 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <iframe src="http://bjcochrane.github.io/Maps/Rendered/SpringGrove2015.html" height="750" width="100%"></iframe>
 
-### Other {.tabset} 
+### Ancient Ohio {.tabset}
 
-#### Hopewell Mound City {.tabset}
+#### Zaleski Mound  
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/Zaleski.html" height="750" width="100%"></iframe>
+
+#### Hopewell Mound City 
 
 <iframe src="http://bjcochrane.github.io/Maps/Rendered/Hopewell2017.html" height="750" width="100%"></iframe>
+
+### Other {.tabset} 
 
 #### Punderson Manor and Burton Wetlands {.tabset}
 
