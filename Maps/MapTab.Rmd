@@ -151,3 +151,17 @@ knitr::opts_chunk$set(echo = TRUE)
 ### Allegheny National Forest
 
 <iframe src="http://bjcochrane.github.io/Maps/Rendered/Allegheny.html" height="750" width="100%"></iframe>
+
+## Natchez Trace {.tabset}
+
+### The Trace
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/NatchezTrace.html" height="750" width="100%"></iframe>
+
+### Vicksburg
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/Vicksburg.html" height="750" width="100%"></iframe>
+
+### Natchez
+
+<iframe src="http://bjcochrane.github.io/Maps/Rendered/Natchez.html" height="750" width="100%"></iframe>
